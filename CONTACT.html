@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lofi Guitar Business</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+
+
+
+
+        
+        body {
+            background-color: #1e1e2e;
+            color: #d3d3e7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+            justify-content: left;
+            height: 200vh;
+            font-family: 'Press Start ', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #ffd700;
+            text-shadow: 2px 2px #000;
+            animation: flicker 0.8s infinite;
+        }
+        
+
+
+
+    
+
+
+
+        header p {
+            font-size: 1em;
+            color: #a8a8c4;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+
+
+
+
+
+        button {
+            background-color: #33334d;
+            color: #d3d3e7;
+            border: 2px round #565680;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 3px 3px 0 #000;
+        }
+        button:hover {
+            background-color: #ffd700;
+            color: #1e1e2e;
+            /*transform: translateY(-3px);*/
+            box-shadow: 3px 3px 0 #000;
+        }
+        #content{
+            display : none ;
+            list-style-type: none;
+
+        }
+        #content:hover{
+            display: block;
+        }
+        button:hover  + #content {
+            display: block;
+        }
+        #dropdown-element:hover{
+             background-color: rgb(68, 47, 126);
+        }
+        #dropdown-menu{background-color: rgb(25, 26, 78) ; 
+                       border: 2px solid rgb(27, 45, 84) ; 
+        }
+
+    
+
+
+
+        
+        main {
+            
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+            25%, 75% { opacity: 0.6; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Guitar Business 🎸</h1>
+        <p>Explore the chill vibes of learning guitar.</p>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href ='INDEX.html'"> Contact Back-></button>
+ 
+    </nav>
+
+    <main>
+     
+        <section id="about" style="display:block; margin-left: 20%; margin-right: 20%;">
+            <h2>Contact</h2>
+            <p >  My name is <name> and I am the creator of this website designed with the purpose of equiping you dear guitarrist or aspiring guitarrist 
+                with the right set of tools for your growth in the more simplest way as posible. My email is <email> castroleyvaericluis@gmail.com</email> </section>
+
+        
+    </main>
+
+    <script>
+                  
+                  
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lofi Guitar Business</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+
+
+
+
+        
+        body {
+            background-color: #1e1e2e;
+            color: #d3d3e7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+            justify-content: left;
+            height: 200vh;
+            font-family: 'Press Start ', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #ffd700;
+            text-shadow: 2px 2px #000;
+            animation: flicker 0.8s infinite;
+        }
+        
+
+
+
+    
+
+
+
+        header p {
+            font-size: 1em;
+            color: #a8a8c4;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+
+
+
+
+
+        button {
+            background-color: #33334d;
+            color: #d3d3e7;
+            border: 2px round #565680;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 3px 3px 0 #000;
+        }
+        button:hover {
+            background-color: #ffd700;
+            color: #1e1e2e;
+            /*transform: translateY(-3px);*/
+            box-shadow: 3px 3px 0 #000;
+        }
+        #content{
+            display : none ;
+            list-style-type: none;
+
+        }
+        #content:hover{
+            display: block;
+        }
+        button:hover  + #content {
+            display: block;
+        }
+        #dropdown-element:hover{
+             background-color: rgb(68, 47, 126);
+        }
+        #dropdown-menu{background-color: rgb(25, 26, 78) ; 
+                       border: 2px solid rgb(27, 45, 84) ; 
+        }
+
+    
+
+
+
+        
+        main {
+            
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+            25%, 75% { opacity: 0.6; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Guitar Business 🎸</h1>
+        <p>Explore the chill vibes of learning guitar.</p>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href ='INDEX.html'"> Lessons Back-></button>
+ 
+    </nav>
+
+    <main>
+     
+        <section id="about" style="display:block; margin-left: 20%; margin-right: 20%;">
+            <h2>Lessons</h2>
+            <p><ol>
+                <li>Introduction to the Guitar
+                  <ul>
+                    <li>Parts of the guitar</li>
+                    <li>Proper posture and hand positioning</li>
+                    <li>Tuning the guitar (Standard tuning: EADGBE)</li>
+                    <li>Basic maintenance (changing strings, cleaning)</li>
+                  </ul>
+                </li>
+              
+                <li>Basic Open Chords
+                  <ul>
+                    <li>Introduction to open chords (C, G, D, E, A, F)</li>
+                    <li>How to read chord charts</li>
+                    <li>Simple strumming patterns</li>
+                    <li>Basic chord transitions</li>
+                  </ul>
+                </li>
+              
+                <li>Strumming Techniques
+                  <ul>
+                    <li>Downstrokes vs. upstrokes</li>
+                    <li>Alternate strumming</li>
+                    <li>Simple strumming patterns (1-2-3-4, 1-and-2-and-3-and-4)</li>
+                    <li>Introduction to palm muting</li>
+                  </ul>
+                </li>
+              
+                <li>Basic Rhythm and Timing
+                  <ul>
+                    <li>Counting beats and bars</li>
+                    <li>Quarter notes, eighth notes, and rests</li>
+                    <li>Playing with a metronome</li>
+                    <li>Simple 4/4 time rhythm exercises</li>
+                  </ul>
+                </li>
+              
+                <li>Power Chords and Basic Rock Riffs
+                  <ul>
+                    <li>What are power chords? (root and fifth)</li>
+                    <li>How to play power chords (5th string and 6th string roots)</li>
+                    <li>Basic rock riffs (e.g., “Smoke on the Water”)</li>
+                    <li>Introduction to single-note picking</li>
+                  </ul>
+                </li>
+              
+                <li>Intro to Basic Scales
+                  <ul>
+                    <li>Introduction to the chromatic scale</li>
+                    <li>The major scale (5th fret version, C major scale)</li>
+                    <li>Basic scale exercises (playing on different strings)</li>
+                    <li>Using scales for melodies and improvisation</li>
+                  </ul>
+                </li>
+              
+                <li>Barre Chords (Introduction)
+                  <ul>
+                    <li>What are barre chords?</li>
+                    <li>Playing F major and B minor as examples</li>
+                    <li>Tips for building finger strength and dexterity</li>
+                    <li>Applying barre chords in songs</li>
+                  </ul>
+                </li>
+              
+                <li>Chords In Different Positions
+                  <ul>
+                    <li>The CAGED system (chords in different positions on the neck)</li>
+                    <li>Inversions of chords</li>
+                    <li>Exploring chord voicings up the neck</li>
+                    <li>Using the CAGED system to expand chord knowledge</li>
+                  </ul>
+                </li>
+              
+                <li>Fingerpicking and Arpeggios
+                  <ul>
+                    <li>Introduction to fingerpicking technique</li>
+                    <li>Basic arpeggio patterns (C, G, D, A)</li>
+                    <li>Combining fingerpicking with chords</li>
+                    <li>Introduction to Travis picking</li>
+                  </ul>
+                </li>
+              
+                <li>Minor and Major Pentatonic Scales
+                  <ul>
+                    <li>The minor pentatonic scale (A minor, for example)</li>
+                    <li>The major pentatonic scale (C major, for example)</li>
+                    <li>Box patterns for pentatonic scales</li>
+                    <li>Introduction to soloing and improvisation</li>
+                  </ul>
+                </li>
+              
+                <li>Intermediate Strumming Patterns
+                  <ul>
+                    <li>Syncopated strumming</li>
+                    <li>Using rests and accents in strumming</li>
+                    <li>Dotted notes and triplets</li>
+                    <li>Strumming along with more complex songs</li>
+                  </ul>
+                </li>
+              
+                <li>Basic Music Theory for Guitarists
+                  <ul>
+                    <li>Understanding intervals (2nds, 3rds, 4ths, etc.)</li>
+                    <li>Building chords from scales</li>
+                    <li>Diatonic harmony: major, minor, diminished, and augmented chords</li>
+                    <li>Basic circle of fifths</li>
+                  </ul>
+                </li>
+              
+                <li>Improvisation Basics
+                  <ul>
+                    <li>Using pentatonic scales for improvisation</li>
+                    <li>Creating simple licks</li>
+                    <li>Adding bends, slides, and vibrato</li>
+                    <li>Jamming over backing tracks</li>
+                  </ul>
+                </li>
+              
+                <li>Intermediate Rock and Blues Riffs
+                  <ul>
+                    <li>Classic rock riffs (e.g., “Sweet Child O' Mine” intro, “Sunshine of Your Love” riff)</li>
+                    <li>Blues progressions (12-bar blues)</li>
+                    <li>Basic blues soloing concepts (combining major and minor pentatonic scales)</li>
+                  </ul>
+                </li>
+              
+                <li>Barre Chords (Advanced)
+                  <ul>
+                    <li>Moving barre chords around the neck</li>
+                    <li>Understanding chord shapes in different keys</li>
+                    <li>Barre chord inversions</li>
+                    <li>Practice songs using advanced barre chords</li>
+                  </ul>
+                </li>
+              
+                <li>Advanced Scales and Modes
+                  <ul>
+                    <li>The full major scale (C major across the neck)</li>
+                    <li>The modes: Dorian, Phrygian, Lydian, etc.</li>
+                    <li>Applying modes to improvisation</li>
+                    <li>Understanding modal theory and when to use them</li>
+                  </ul>
+                </li>
+              
+                <li>Advanced Fingerpicking and Hybrid Picking
+                  <ul>
+                    <li>Advanced fingerpicking patterns (Carter-style picking, etc.)</li>
+                    <li>Hybrid picking (using pick and fingers)</li>
+                    <li>Fingerpicking with melody and chords combined</li>
+                    <li>Playing with thumb over the neck (for barre chords)</li>
+                  </ul>
+                </li>
+              
+                <li>Building Soloing Techniques
+                  <ul>
+                    <li>Creating emotional phrasing (using dynamics, vibrato, bends)</li>
+                    <li>Using the blues scale to solo</li>
+                    <li>Advanced bending and sliding techniques</li>
+                    <li>Understanding the fretboard deeply (playing in all positions)</li>
+                  </ul>
+                </li>
+              
+                <li>Comping and Rhythm Guitar
+                  <ul>
+                    <li>Playing with a band (chord comping)</li>
+                    <li>Using inversions and rhythmic variations in your playing</li>
+                    <li>How to "read the room" and accompany other instruments</li>
+                    <li>Playing with groove and pocket</li>
+                  </ul>
+                </li>
+              
+                <li>Advanced Theory: Chord Substitutions and Extensions
+                  <ul>
+                    <li>Chord extensions (7ths, 9ths, 11ths, 13ths)</li>
+                    <li>Chord substitutions (tritone substitutions, etc.)</li>
+                    <li>Using jazz chords in pop/rock contexts</li>
+                    <li>Understanding functional harmony</li>
+                  </ul>
+                </li>
+              
+                <li>Advanced Rock and Jazz Solos
+                  <ul>
+                    <li>Rock solos with fast alternate picking and sweep picking</li>
+                    <li>Jazz improvisation concepts (playing on chord changes)</li>
+                    <li>Using chromaticism in solos</li>
+                    <li>Learning solos from famous guitarists (e.g., Jimi Hendrix, Eric Clapton, John Coltrane-inspired guitar solos)</li>
+                  </ul>
+                </li>
+              
+                <li>Songwriting and Arrangement
+                  <ul>
+                    <li>Writing original music (melodies, chord progressions, etc.)</li>
+                    <li>Arranging songs for guitar (intro, verse, chorus, bridge)</li>
+                    <li>Experimenting with different tunings and time signatures</li>
+                    <li>Basic recording techniques for guitar</li>
+                  </ul>
+                </li>
+              
+                <li>Guitar Recital/Performance
+                  <ul>
+                    <li>Performing a song from start to finish</li>
+                    <li>Playing in front of others (confidence building)</li>
+                    <li>Techniques for stage presence</li>
+                    <li>Playing with a backing track or band</li>
+                  </ul>
+                </li>
+              
+                <li>Recording and Producing Guitar Music
+                  <ul>
+                    <li>Introduction to home recording (software, microphones, etc.)</li>
+                    <li>Layering guitar tracks</li>
+                    <li>Creating your own sound</li>
+                    <li>Mixing and mastering basics for guitar</li>
+                  </ul>
+                </li>
+              </ol>
+              </p>
+        </section>
+
+        
+    </main>
+
+    <script>
+                  
+                  
+    </script>
+</body>
+</html>

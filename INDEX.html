@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lofi Guitar Business</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+
+
+
+
+        
+        body {
+            background-color: #1e1e2e;
+            color: #d3d3e7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;                   /*general style for the BODY*/
+            margin-top: 10%;
+            justify-content: left;
+            height: 200vh;
+            font-family: 'Press Start ', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #ffd700;
+            text-shadow: 2px 2px #000;
+            animation: flicker 0.8s infinite;
+        }
+        
+
+
+
+    
+
+
+
+        header p {
+            font-size: 1em;
+            color: #a8a8c4;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+
+
+
+
+
+        button {
+            background-color: #33334d;
+            color: #d3d3e7;
+            border: 2px round #565680;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 3px 3px 0 #000;
+        }
+        button:hover {
+            background-color: #ffd700;
+            color: #1e1e2e;
+            /*transform: translateY(-3px);*/
+            box-shadow: 3px 3px 0 #000;
+        }
+        #content{
+            display : none ;
+            list-style-type: none;
+
+        }
+        #content:hover{
+            display: block;
+        }
+        button:hover  + #content {
+            display: block;
+        }
+        #dropdown-element:hover{
+             background-color: rgb(68, 47, 126);
+        }
+        #dropdown-menu{background-color: rgb(25, 26, 78) ; 
+                       border: 2px solid rgb(27, 45, 84) ; 
+        }
+
+    
+
+
+
+        
+        main {
+            
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .play-icon {
+            
+            width: 0;
+            height: 0;
+            
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 30px solid rgb(225, 216, 216);
+            transform: rotate(270deg);
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+            25%, 75% { opacity: 0.6; }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Guitar Business 🎸</h1>
+        <p>Explore the chill vibes of learning guitar.</p>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='ABOUT.html'">About</button>
+        <button onclick="window.location.href='LESSONS.html'">Lessons</button>
+        <button onclick="window.location.href='CONTACT.html'">Contact</button>
+    </nav>
+
+    <main>
+        <div id = "dropdown-menu">
+            <button id = "dropdownBtn" > START PLAYING<div class = "play-icon"></div></button>
+            <ul id= "content"> 
+                <li id="dropdown-element">Menu</li>
+                <li id="dropdown-element">Elemento 5</li>
+                <li id="dropdown-element">Elemento 2</li>
+                <li id="dropdown-element" > Sub-Element </li>
+                <li id="dropdown-element" > Sub-Element </li>
+                
+            </ul>
+        </div>
+        <section id="about" style="display: none;">
+            <h2>About Us</h2>
+            <p>Welcome to a cozy place to learn guitar with a relaxed, lofi vibe.</p>
+        </section>
+
+        <section id="lessons" style="display: none;">
+            <h2>Lessons</h2>
+            <p>Get access to beginner and intermediate guitar lessons, all set to a chill, lofi background.</p>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Reach out to us and let's chat about your guitar journey!</p>
+        </section>
+
+       
+    </main>
+
+    <script>
+                  
+                  
+    </script>
+</body>
+</html>
