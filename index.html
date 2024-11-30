@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Lofi Guitar Business</title>
     <style>
-        /* General Reset */
+        /* General Reset for all the elements*/
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Press Start 2P', cursive;
         }
+
+
 
 
 
@@ -24,7 +26,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;                   /*general style for the BODY*/
-            margin-top: 10%;
+            margin-top: 0%;
             justify-content: left;
             height: 200vh;
             font-family: 'Press Start ', sans-serif;
@@ -32,33 +34,63 @@
 
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px;                     /* this is for the header text to be in the center and for maintaining certain distance at the top*/
         }
 
         header h1 {
+            margin-top: 200px;
             font-size: 2em;
             color: #ffd700;
-            text-shadow: 2px 2px #000;
+            text-shadow: 2px 2px #000;               /* this is the nice yellow font that flicks*/
             animation: flicker 0.8s infinite;
         }
         
 
-
+        .dropdown-nav{
+            display: flex;
+            width:100%;                            /*the desplegable nav*/
+            height: 40px;
+            box-sizing: content-box;
+            background-color:#1b1a19 ;
+            margin-top: 0%;
+            margin-bottom:50px;
+            z-index: 6;
+            position: fixed;
+            top: 0;
+            border-radius: 30px;
+        
+            
+        }
 
     
 
 
 
+
+
+
+
+
         header p {
             font-size: 1em;
-            color: #a8a8c4;
+            color: #a8a8c4;                 
         }
 
-        nav {
-            margin: 20px 0;
+        .nav {
+            
+            /*margin: 20px 0;*/
             display: flex;
             gap: 15px;
         }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +137,14 @@
 
 
         
+
+
+
+
+
+
+
+
         main {
             
             text-align: center;
@@ -126,6 +166,30 @@
             transform: rotate(270deg);
         }
 
+
+
+        /* this ie sector is in development---------*/  
+        footer{
+         
+            background-color: #1b1a19;
+            color: #ffd700;
+            margin-top:5000px;
+            width: 100%;
+             
+
+         }
+
+         footer p{
+            
+                
+            margin-left: 100px;
+            margin-right: 100px;
+
+         }
+      
+
+        /* still working on this -------------------*/
+
         @keyframes flicker {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.8; }
@@ -135,26 +199,33 @@
     </style>
 </head>
 <body>
+    <div class = "dropdown-nav" >
+        <h4 style ="flex: 1;">Menu</h4>
+        <h4 style ="flex: 1;">Content</h4>
+        <h4 style ="flex: 2;">Videos</h4>
+        <h4 style ="flex: 1;">Chat ;)</h4>
+    </div>
     <header>
-        <h1>My Guitar Business 🎸</h1>
+        <h1>My Guitar Community 🎸</h1>
         <p>Explore the chill vibes of learning guitar.</p>
     </header>
 
-    <nav>
+
+    <div class = "nav">
         <button onclick="window.location.href='ABOUT.html'">About</button>
         <button onclick="window.location.href='LESSONS.html'">Lessons</button>
         <button onclick="window.location.href='CONTACT.html'">Contact</button>
-    </nav>
+    </div>
 
     <main>
         <div id = "dropdown-menu">
             <button id = "dropdownBtn" > START PLAYING<div class = "play-icon"></div></button>
             <ul id= "content"> 
-                <li id="dropdown-element">Menu</li>
-                <li id="dropdown-element">Elemento 5</li>
-                <li id="dropdown-element">Elemento 2</li>
-                <li id="dropdown-element" > Sub-Element </li>
-                <li id="dropdown-element" > Sub-Element </li>
+                <li id="dropdown-element"><a href="Minigame 1.html">Minigame 1</a></li>
+                <li id="dropdown-element">Minigame 2</li>
+                <li id="dropdown-element">Minigame 3</li>
+                <li id="dropdown-element" > Minigame 4 </li>
+                <li id="dropdown-element" > Minigame 5 </li>
                 
             </ul>
         </div>
@@ -175,6 +246,19 @@
 
        
     </main>
+    <footer>
+        <div style ="display: flex;">
+            <div style = "display: flex-3;">
+                <p>Copyright 2024 &#xA9; All Rights Reserved </p>
+            </div>
+            <div style = "display: flex-2;">
+                <p>This is a project created with the purpose of helping guitarrist all around the globe in achiving their dreams4
+                    of becoming exceptional guitarrist here we provide you with a community oriented in developing and growing 
+                    your technical skills while doing amazing friends.
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script>
                   
